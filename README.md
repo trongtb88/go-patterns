@@ -29,4 +29,9 @@ abc
 Storing into db  abc
 ```
 
+## Concurrency Pattern
+```
+go run concurrency/main.go
+```
+
 ## Dependency Pattern
