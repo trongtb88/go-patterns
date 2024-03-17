@@ -21,4 +21,12 @@ data for key
 data for key
 data for key
 ```
+
+## Decorator Pattern
+```
+go run decorator/main.go
+abc
+Storing into db  abc
+```
+
 ## Dependency Pattern
