@@ -34,4 +34,12 @@ Storing into db  abc
 go run concurrency/main.go
 ```
 
+## Observer Pattern
+```
+go run observer/main.go
+Received: 5555 after 22.625µs
+Received: 5555 after 77.5µs
+```
+
+
 ## Dependency Pattern
