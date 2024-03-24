@@ -33,6 +33,9 @@ func mapValues[T constraints.Ordered](values []T, mapFunc func(T) T) []T {
 	return newValues
 }
 
+// --------------------------------------------
+type CustomMap[T comparable, V int | string] map[T]V
+
 func main() {
 	result := Add(1.5, 3.5)
 	fmt.Printf("result %+v\n", result)
@@ -53,5 +56,10 @@ func main() {
 		return i + i
 	})
 	fmt.Printf("resultMap %+v\n", resultMapFloat)
+
+	//-----------------------------------------
+	m := make(CustomMap[int, string])
+	m[1] = "abc"
+	fmt.Printf("%+v", m)
 
 }
